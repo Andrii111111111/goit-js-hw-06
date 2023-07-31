@@ -20,20 +20,20 @@ function elLi(img) {
       <img src="${url}" alt="${alt}" />
     </li>
   `;
-  // return 
-  // ` <li>
-  //   <img src="${url}" alt="${alt}" />
-  // </li>`;
 }
 
 function liIm(arr) {
   const ulEl = document.querySelector(".gallery")
   const list = arr.map((el) => elLi(el)).join("");
   ulEl.insertAdjacentHTML("afterbegin", list)
-  ulEl.style.display = flex;
-  console.log(ulEl)
-  
+  ulEl.style.display = "flex"
 }
 
 liIm(images);
 
+const sty = document.querySelectorAll("img")
+// sty.forEach((el) => el.style.width = "100%" )
+sty.forEach(function (el) {
+  el.style.width = "100%";
+el.style.height = "100%"
+})
