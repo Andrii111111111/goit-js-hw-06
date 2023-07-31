@@ -12,3 +12,28 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+function elLi(img) {
+  const { url, alt } = img
+  return `
+    <li>
+      <img src="${url}" alt="${alt}" />
+    </li>
+  `;
+  // return 
+  // ` <li>
+  //   <img src="${url}" alt="${alt}" />
+  // </li>`;
+}
+
+function liIm(arr) {
+  const ulEl = document.querySelector(".gallery")
+  const list = arr.map((el) => elLi(el)).join("");
+  ulEl.insertAdjacentHTML("afterbegin", list)
+  ulEl.style.display = flex;
+  console.log(ulEl)
+  
+}
+
+liIm(images);
+
