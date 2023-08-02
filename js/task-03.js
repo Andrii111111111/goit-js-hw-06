@@ -32,7 +32,6 @@ function liIm(arr) {
 liIm(images);
 
 const sty = document.querySelectorAll("img")
-// sty.forEach((el) => el.style.width = "100%" )
 sty.forEach(function (el) {
   el.style.width = "100%";
 el.style.height = "100%"
