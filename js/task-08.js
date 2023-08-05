@@ -2,9 +2,9 @@
 const data = document.querySelector('.login-form')
 
 
-data.addEventListener("submit", qqq)
+data.addEventListener("submit", sendData)
 
-function qqq(e) {
+function sendData(e) {
     e.preventDefault();
     const {
         elements: { email, password }

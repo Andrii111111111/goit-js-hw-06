@@ -2,8 +2,8 @@ const inp = document.getElementById('validation-input')
 const len = document.querySelector('input[data-length="6"]')
 
 
-inp.addEventListener("blur", qqq)
-function qqq(e) {
+inp.addEventListener("blur", checkData)
+function checkData(e) {
     if (e.currentTarget.value.length === Number(len.dataset.length)) {
         inp.classList.remove('invalid')
         inp.classList.add('valid')

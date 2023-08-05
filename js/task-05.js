@@ -2,9 +2,9 @@ const data = document.getElementById('name-input')
 const output = document.getElementById('name-output')
 
 
-data.addEventListener("input", ggg)
+data.addEventListener("input", showData)
 
-function ggg(e) {
+function showData() {
     if (data.value === "") {
         return output.textContent = 'Anonymous'
      } else {

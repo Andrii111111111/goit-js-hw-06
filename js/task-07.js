@@ -1,9 +1,9 @@
 const size = document.getElementById("font-size-control")
 const text = document.getElementById("text")
 
-size.addEventListener('input', qqq)
+size.addEventListener('input', chengeSize)
 
-function qqq(e) {
+function chengeSize(e) {
     text.style.fontSize = `${e.target.value}px`;
 }
 
