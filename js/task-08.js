@@ -1,4 +1,4 @@
-const sendData = document.querySelector('[type="submit"]')
+
 const data = document.querySelector('.login-form')
 
 
