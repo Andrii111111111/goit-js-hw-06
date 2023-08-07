@@ -8,7 +8,7 @@ const quantity = document.querySelector("input")
 const divAdd = document.getElementById("boxes")
 const add = document.querySelector('[data-create]')
 const remove = document.querySelector('[data-destroy]')
-
+const size = 10
 
 add.addEventListener("click", createBoxes)
 
@@ -19,8 +19,8 @@ function createBoxes(amount) {
 for (let i = 1; i <= amount; i++) {
 	let div = document.createElement('div');
   divAdd.appendChild(div);
-  div.style.width = "30px"
-  div.style.height = "30px"
+  div.style.width = `${30 + size * i}px`
+  div.style.height = `${30 + size * i}px`
   div.style.backgroundColor = getRandomHexColor()
   
 }
